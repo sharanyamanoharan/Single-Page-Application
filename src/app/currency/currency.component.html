@@ -1,3 +1,11 @@
-<p>
-  currency works!
-</p>
+<h2>
+  Currency Exchange Rates
+  <hr>
+  <input type="text" [(ngModel)]=id_currency placeholder="Enter currency..eg.GBP,EUR etc" >
+  <button type="button" (click)=callCurrencyService()>Convert</button>
+</h2>
+<div *ngIf='status'>
+  Base currency is : {{ currencyInfo.base }} <br>
+  Currency entered is : {{ this.id_currency }} <br>
+  Exchange rate is : {{ currencyInfo.rates[this.id_currency] }}<br>
+</div>

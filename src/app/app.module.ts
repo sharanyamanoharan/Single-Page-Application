@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from "@angular/router";
-import { HttpClientModule } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
@@ -22,14 +22,13 @@ import { SharedService } from './shared.service';
     WeatherComponent,
     CurrencyComponent,
     MovieComponent, 
-    RoutingModule.component  
-    
+    RoutingModule.component     
    
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
-    HttpClientModule ,
+    HttpModule ,
     FormsModule
   ],
   providers: [SharedService],

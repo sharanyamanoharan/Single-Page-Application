@@ -4,4 +4,14 @@
   <input type="text" [(ngModel)]=id_city  placeholder="Enter City name ..."><br>  
   <button type="button" (click)="callWeatherService()">Search</button>
 </h2>
+<div *ngIf='status'>
+  Name:{{weatherInfo.name}}<br>
+  Country:{{weatherInfo.sys.country}}<br>
+  Temperature:{{weatherInfo.main.temp}}<br>
+  Humidity:{{weatherInfo.main.humidity}}<br>
+  Temp_min:{{weatherInfo.main.temp_min }}<br>
+  Temp_max:{{weatherInfo.main.temp_max}}<br>
+  Main:{{weatherInfo.weather[0].main}}<br>
+  Description:{{weatherInfo.weather[0].description}}<br>  
+</div>
   
