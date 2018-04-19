@@ -10,8 +10,8 @@ import { ICurrency } from './interfaces/currency';
 @Injectable()
 export class SharedService {
     private weatherURL='http://api.openweathermap.org/data/2.5/weather?q='
-    private appId='&APPID=baeb324c85346121d233f1e42b3e39ed';
-    private movieURL="https://api.themoviedb.org/3/movie/550?api_key=c486adbd68986b92b29d3fe42070cb35/";
+    private appId='&units=metric&APPID=baeb324c85346121d233f1e42b3e39ed';
+    private findMovieURL = "http://www.omdbapi.com/?apikey=bf520c74&t=";    
     private currencyURL="http://api.fixer.io/latest?symbols=";
     requestMade:number = 0;
          
@@ -51,9 +51,9 @@ export class SharedService {
 
        findMovie(movie){
          this.requestMade = this.requestMade + 1;
-         return this._http.get(this.movieURL + movie)
+         return this._http.get(this.findMovieURL + movie)
          .map(response => {
-           { return response => console.log(response)}
+           { return response.json()}
          })
          .catch(error => Observable.throw(error.json()));
        }

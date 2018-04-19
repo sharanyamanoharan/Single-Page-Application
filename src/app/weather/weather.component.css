@@ -1,0 +1,58 @@
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  
+}
+.weather-card{
+    width:100%;     
+    margin: auto;     
+    justify-content:center;
+    align-items:center;   
+    font-family: 'Allerta Stencil' ;
+    font-size: 3.5rem; 
+    background-image: url('/assets/images/lightning-sky-storm.jpg');    
+    background-position: center;  
+    border: 2px solid black;
+    box-sizing:border-box;
+}
+
+.weather-form {     
+    align-content:center;
+    justify-content:center;
+    
+  }
+  
+  .weather-full-width {
+    width:50%;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+  }
+
+  .png-icon{
+    
+    padding: 0;
+    display: inline-block;
+    background-repeat: no-repeat no-repeat;
+    pointer-events: none;
+}
+
+  .display-details{
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+mat-list{
+  align-content: center;
+  justify-content: center;
+}
+
+mat-list-item{
+  display: flex;
+  font-family: cursive; 
+  font-size: 100px ; 
+  text-align:center;
+  padding-left: 20%;
+  min-height: 100%;
+  
+}

@@ -3,6 +3,13 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from "@angular/router";
 import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatFormFieldModule, MatInputModule, MatSelectModule } from '@angular/material';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatListModule } from '@angular/material/list';
+import { MatIconModule } from '@angular/material/icon';
+
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
@@ -29,7 +36,15 @@ import { SharedService } from './shared.service';
     BrowserModule,
     RouterModule.forRoot(routes),
     HttpModule ,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatCardModule,
+    MatListModule,
+    MatButtonModule,
+    MatIconModule
   ],
   providers: [SharedService],
   bootstrap: [AppComponent]

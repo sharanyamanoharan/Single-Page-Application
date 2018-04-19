@@ -1,3 +1,22 @@
-<p>
-  movie works!
-</p>
+<h2>
+   One stop Movie Database
+<hr>
+  <input type="text" [(ngModel)]=movie_title placeholder="Enter Movie name ..."><br>  
+  <button type="button" (click)="callMovieService()">Search</button>
+</h2>
+<div *ngIf='status'>
+  Title:{{movieInfo.Title}}<br>
+  Year:{{movieInfo.Year}}<br>
+  Released:{{movieInfo.Released}}<br>
+  Genre:{{movieInfo.Genre}}<br>
+  Director:{{movieInfo.Director }}<br>
+  Actors:{{movieInfo.Actors}}<br>
+  Plot:{{movieInfo.Plot}}<br>
+  Language:{{movieInfo.Language}}<br> 
+  Country:{{movieInfo.Country }}<br>
+  Awards:{{movieInfo.Awards}}<br>  
+  Ratings: {{ movieInfo.Ratings[0] }}<br>
+  imdbRating:{{movieInfo.imdbRating}}<br>  
+  Production:{{movieInfo.Production}}<br> 
+</div>
+  
