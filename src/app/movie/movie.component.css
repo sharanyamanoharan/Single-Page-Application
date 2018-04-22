@@ -1,0 +1,56 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.movie-card{
+    color: #181BDD;    
+    width:100%; 
+    height: 100%;    
+    margin: auto;     
+    justify-content:center;
+    align-items:center;   
+    font-family: 'Allerta Stencil' ;
+    font-size: 5rem; 
+    background-image: url('/assets/images/movie-reel-background.png');    
+    background-position: center;  
+    border: 2px solid black;
+    box-sizing:border-box;
+}
+
+.movie-form {     
+    align-content:center;
+    justify-content:center;    
+    color: purple;
+    opacity: 1;
+}
+
+.movie-full-width {
+    width:50%;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-top: 2rem;
+  }
+
+  .display-details{
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+mat-list{
+  align-content: center;
+  justify-content: center;
+}
+
+mat-list mat-list-item{
+  display: flex;
+  text-align:center; 
+  color: white;
+  font-family: cursive; 
+  font-size: 1.6em ; 
+  font-weight: bold;
+  text-align:center;
+  padding-left: 5%;
+  min-height: 100%;
+  
+}

@@ -11,33 +11,66 @@
     <mat-card class="weather-card">Weather Forecast  
         <form class="weather-form">
           <mat-form-field class="weather-full-width">
-            <input matInput  placeholder="Enter City Name" [(ngModel)]=id_city [ngModelOptions]="{standalone: true}" >
+            <input matInput placeholder="Enter City Name" [(ngModel)]=id_city [ngModelOptions]="{standalone: true}" >
           </mat-form-field>   
           <button mat-raised-button color="primary" (click)="callWeatherService()">Search</button>
-        </form>        
+        </form>         
            <mat-card-content>
-            <mat-list *ngIf='status'>
+            <mat-list *ngIf='status'>                     
               <mat-list-item>
                 <button mat-button><img class="png-icon" src="/assets/images/city.png" style="width: 24px; height: 24px;"></button>
-                City        : {{weatherInfo.name}}</mat-list-item>  
+                City        : {{weatherInfo.name}}
+              </mat-list-item>             
               <mat-list-item>
                   <button mat-button><img class="png-icon" src="/assets/images/map.png" style="width: 24px; height: 24px;"></button>
-                Country     : {{weatherInfo.sys.country}}</mat-list-item>              
+                Country     : {{weatherInfo.sys.country}}
+              </mat-list-item>                   
+              <mat-list-item>     
+                <button mat-button><img class="png-icon" src="/assets/images/temperature-celsius.png" style="width: 24px; height: 24px;"></button>
+                Temperature : {{weatherInfo.main.temp}} &deg;C 
+              </mat-list-item>                   
+              <mat-list-item>     
+                 <button mat-button><img class="png-icon" src="/assets/images/water-percent.png" style="width: 24px; height: 24px;"></button>
+                Humidity    : {{weatherInfo.main.humidity}}% 
+              </mat-list-item>                                   
               <mat-list-item>
-                  <button mat-button><img class="png-icon" src="/assets/images/temperature-celsius.png" style="width: 24px; height: 24px;"></button>
-                Temperature : {{weatherInfo.main.temp}}</mat-list-item>              
-              <mat-list-item>Humidity    : {{weatherInfo.main.humidity}}% </mat-list-item>                          
-              <mat-list-item>MinTemp     : {{weatherInfo.main.temp_min }} &deg;C </mat-list-item>              
-              <mat-list-item>MaxTemp     : {{weatherInfo.main.temp_max}} &deg;C </mat-list-item>           
-              <mat-list-item>Condition   : {{weatherInfo.weather[0].main}}</mat-list-item> 
-              <mat-list-item>Description : {{weatherInfo.weather[0].description}}</mat-list-item>
+                  <button mat-button><img class="png-icon" src="/assets/images/low-temperature.png" style="width: 24px; height: 24px;"></button>
+                MinTemp     : {{weatherInfo.main.temp_min }} &deg;C 
+              </mat-list-item>                     
+              <mat-list-item>
+                  <button mat-button><img class="png-icon" src="/assets/images/high-temperature.png" style="width: 24px; height: 24px;"></button>
+                MaxTemp     : {{weatherInfo.main.temp_max}} &deg;C
+               </mat-list-item>                 
+              <mat-list-item>
+                  <button mat-button><img class="png-icon" src="/assets/images/cloud-and-sun.png" style="width: 24px; height: 24px;"></button>
+                Condition   : {{weatherInfo.weather[0].main}}
+              </mat-list-item>                
+              <mat-list-item>
+                  <button mat-button><img class="png-icon" src="/assets/images/sunny-landscape.png" style="width: 24px; height: 24px;"></button>
+                Description : {{weatherInfo.weather[0].description}}
+              </mat-list-item>              
             </mat-list>
-         </mat-card-content>            
+         </mat-card-content>                  
         </mat-card>
+
+        <div id="openweathermap-widget-11"></div>
+<script src='//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/d3.min.js'>
+</script>
+<script>window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = []; 
+ window.myWidgetParam.push({cityid: 'this.id_city',appid: 'baeb324c85346121d233f1e42b3e39ed',
+ units: 'metric',containerid: 'openweathermap-widget-11' });
+   (function()
+    {var script = document.createElement('script');
+    script.async = true;
+    script.charset = "utf-8";
+    script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";
+    var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(script, s); 
+
+     })
+     ();</script>
   
 </body>
 </html>
-
 
 
 

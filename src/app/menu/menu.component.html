@@ -1,9 +1,29 @@
-<div class="row">
-  <div class="col-xs-12">
-   <ul class="nav nav-pills">
-    <li routerLinkActive="active"> <a routerLink="/weather" >Weather</a></li>
-    <li routerLinkActive="active"> <a routerLink="/movie" >Movie Details</a></li>
-    <li routerLinkActive="active"> <a routerLink="/currency" >Currency Rates</a></li>
-   </ul>
- </div>
-</div>
+
+<mat-card>
+      <mat-card-content>
+        <h2 class="top-bar">Menu</h2>
+        <mat-tab-group class="tab-group">
+          <mat-tab label="Weather" >
+            <div class="demo-tab-content" routerLinkActive="active" routerLink="/weather">
+              Weather App is the most accurate source of hyperlocal weather information. 
+              With down-to-the-minute forecasts, you’ll know exactly when the rain will 
+              start or stop, right where you're standing. (It's like magic.)          
+            </div>
+          </mat-tab>
+          <mat-tab label="Movie Database"  >
+            <div class="demo-tab-content" routerLinkActive="active" routerLink="/movie" >
+                Your one-stop shop for all your movie needs and information.
+                Browse through movies and more and get all the information there is 
+                with just one click!
+            </div>  
+          </mat-tab>         
+          <mat-tab label="Currency Converter" >              
+            <div class="demo-tab-content" routerLinkActive="active" routerLink="/currency">
+              Calculate live currency and foreign exchange rates with this free currency converter.              
+            </div>  
+          </mat-tab>        
+        </mat-tab-group>
+      </mat-card-content>
+    </mat-card>
+    
+    

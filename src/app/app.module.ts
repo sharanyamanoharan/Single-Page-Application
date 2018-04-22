@@ -9,6 +9,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
+import { MatTabsModule } from '@angular/material/tabs';
 
 
 import { AppComponent } from './app.component';
@@ -44,7 +45,8 @@ import { SharedService } from './shared.service';
     MatCardModule,
     MatListModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatTabsModule  
   ],
   providers: [SharedService],
   bootstrap: [AppComponent]
