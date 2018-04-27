@@ -9,10 +9,10 @@ import { ICurrency } from './interfaces/currency';
 
 @Injectable()
 export class SharedService {
-    private weatherURL='http://api.openweathermap.org/data/2.5/weather?q='
+    private weatherURL='https://api.openweathermap.org/data/2.5/weather?q='
     private appId='&units=metric&APPID=baeb324c85346121d233f1e42b3e39ed';
-    private findMovieURL = "http://www.omdbapi.com/?apikey=bf520c74&t=";    
-    private currencyURL="http://api.fixer.io/latest?symbols=";
+    private findMovieURL = "https://www.omdbapi.com/?apikey=bf520c74&t=";    
+    private currencyURL="https://api.fixer.io/latest?symbols=";
     requestMade:number = 0;
          
 
