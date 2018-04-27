@@ -1,13 +1,13 @@
 html, body {
     max-width: 100%;
-    overflow-x: hidden;
+    overflow-x: scroll;
 }
 
 .currency-card{
     color: #A93226;    
     width:100%; 
     height: 100%;    
-    margin: auto;     
+    margin: 0;     
     justify-content:center;
     align-items:center;   
     font-family: 'Allerta Stencil' ;
@@ -21,7 +21,7 @@ html, body {
 .currency-form {     
     align-content:center;
     justify-content:center;    
-    color: purple;
+    color: white;
     opacity: 1;
 }
 
@@ -29,7 +29,8 @@ html, body {
     width:50%;
     font-size: 1.8rem;
     font-weight: bold;
-    padding-top: 2rem;
+    padding-top: 0rem;
+    color: white;
   }
 
   .display-details{

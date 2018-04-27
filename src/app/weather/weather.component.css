@@ -34,7 +34,8 @@ html, body {
     width:50%;
     font-size: 1.8rem;
     font-weight: bold;
-    padding-top: 2rem;
+    padding-top: 0rem;
+    color: white;
   }
 
   .png-icon{
@@ -46,10 +47,12 @@ html, body {
    
 }
 
-  .display-details{
-    justify-content: flex-start;
-    align-items: center;
-  }
+.display-details{
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
 
 mat-list{
   align-content: center;
@@ -59,7 +62,7 @@ mat-list{
 mat-list mat-list-item{
   display: flex;
   text-align:center; 
-  color: black;
+  color: #c2185b;
   font-family: cursive; 
   font-size: 1.8rem ; 
   font-weight: bold;

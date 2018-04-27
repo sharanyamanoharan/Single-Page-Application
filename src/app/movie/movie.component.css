@@ -14,7 +14,6 @@ html, body {
     font-size: 5rem; 
     background-image: url('/assets/images/imageedit_10_7303704090.png');    
     background-position: center;  
-    border: 2px solid black;
     box-sizing:border-box;
 }
 
@@ -29,7 +28,8 @@ html, body {
     width:50%;
     font-size: 1.8rem;
     font-weight: bold;
-    padding-top: 2rem;
+    padding-top: 0rem;
+    color: white;
   }
 
   .display-details{
@@ -40,6 +40,22 @@ html, body {
 mat-list{
   align-content: center;
   justify-content: center;
+  line-height: 200%;
+  text-align: justify;
+    text-justify: inter-word;
+  }
+
+.mat-list .mat-list-item .mat-list-text{
+    line-height: 300%;
+    text-align: justify;
+    text-justify: inter-word;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0;
+    align-items: baseline;
 }
 
 mat-list mat-list-item{
@@ -49,8 +65,10 @@ mat-list mat-list-item{
   font-family: cursive; 
   font-size: 1.6em ; 
   font-weight: bold;
-  text-align:center;
+  text-align:left;
   padding-left: 5%;
   min-height: 100%;
+  line-height: 1.2;
   
 }
+

@@ -12,6 +12,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatTabsModule } from '@angular/material/tabs';
 
 
+
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { WeatherComponent } from './weather/weather.component';
@@ -46,7 +47,8 @@ import { SharedService } from './shared.service';
     MatListModule,
     MatButtonModule,
     MatIconModule,
-    MatTabsModule  
+    MatTabsModule ,
+    
   ],
   providers: [SharedService],
   bootstrap: [AppComponent]

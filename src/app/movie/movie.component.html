@@ -20,10 +20,7 @@
         <mat-list *ngIf='status'>
             <mat-list-item>
                 Title:{{movieInfo.Title}}
-            </mat-list-item>
-            <mat-list-item>
-              Title:{{movieInfo.Title}}
-            </mat-list-item>
+            </mat-list-item>           
             <mat-list-item>
                 Year:{{movieInfo.Year}}
               </mat-list-item>
@@ -34,12 +31,12 @@
                   Genre:{{movieInfo.Genre}}
               </mat-list-item>
               <mat-list-item>
+                    Actors:{{movieInfo.Actors}}
+                </mat-list-item>
+              <mat-list-item>
                   Director:{{movieInfo.Director}}
-              </mat-list-item>
-              <mat-list-item>
-                  Actors:{{movieInfo.Actors}}
-              </mat-list-item>
-              <mat-list-item>
+              </mat-list-item>              
+              <mat-list-item id="plot">
                   Plot:{{movieInfo.Plot}}
               </mat-list-item>
               <mat-list-item>
@@ -50,10 +47,7 @@
               </mat-list-item>
               <mat-list-item>
                   Awards:{{movieInfo.Awards}}
-              </mat-list-item>
-              <mat-list-item>
-                  Ratings: {{ movieInfo.Ratings[0] }}
-              </mat-list-item>
+              </mat-list-item>            
               <mat-list-item>
                   imdbRating:{{movieInfo.imdbRating}}
               </mat-list-item>
