@@ -15,18 +15,18 @@
             </mat-form-field>   
             <button mat-raised-button color="primary" (click)="callCurrencyService()">Convert</button>
           </form>         
-          <mat-card-content flex fxLayout="row" fxLayout.lt-sm="column">
+          <mat-card-content >
            <mat-list *ngIf='status'>
-              <mat-list-item  fxFlex="100">
-                  <button mat-button><img class="png-icon" src="/assets/images/currency1.png" style="width: 24px; height: 24px;"></button>
+              <mat-list-item  >
+                  <button mat-button></button>
                   Base currency is : {{ currencyInfo.base }}
                 </mat-list-item>             
-                <mat-list-item  fxFlex="100">
-                    <button mat-button><img class="png-icon" src="/assets/images/currency2.png" style="width: 24px; height: 24px;"></button>
+                <mat-list-item  >
+                    <button mat-button></button>
                     Currency entered is : {{ this.id_currency }}
                 </mat-list-item>                   
-                <mat-list-item  fxFlex="100">     
-                  <button mat-button><img class="png-icon" src="/assets/images/money-exchange.png" style="width: 24px; height: 24px;"></button>
+                <mat-list-item >     
+                  <button mat-button></button>
                   Exchange rate is : {{ currencyInfo.rates[this.id_currency] }} 
                 </mat-list-item> 
               </mat-list>

@@ -1,6 +1,3 @@
-
-
-
 html, body {
   max-width: 100%;
   overflow-x: hidden;
@@ -16,9 +13,9 @@ html, body {
     font-family: 'Allerta Stencil' ;
     font-size: 5rem; 
     background-image: url('/assets/images/imageedit_8_4628731355.png');    
-    background-position: center;  
-    border: 2px solid black;
+    background-position: center;   
     box-sizing:border-box;
+    box-shadow: grey;
     
 }
 
@@ -38,11 +35,10 @@ html, body {
     color: white;
   }
 
-  .png-icon{
-    
+  .png-icon{    
     padding: 0;
     display: inline-block;
-    background-repeat: no-repeat no-repeat;
+    background-repeat: no-repeat;
     pointer-events: none;
    
 }
@@ -51,7 +47,6 @@ html, body {
   justify-content: flex-start;
   align-items: center;
 }
-
 
 
 mat-list{

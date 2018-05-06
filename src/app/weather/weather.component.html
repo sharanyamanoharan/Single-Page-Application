@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>   
   <link rel="stylesheet" href="//cdn.materialdesignicons.com/2.2.43/css/materialdesignicons.min.css"> 
 </head>
 <body>
@@ -18,35 +18,41 @@
            <mat-card-content>
             <mat-list *ngIf='status'>                     
               <mat-list-item>
-                <button mat-button><img class="png-icon" src="/assets/images/city.png" style="width: 24px; height: 24px;"></button>
+                <button mat-button>                
+               </button>
                 City        : {{weatherInfo.name}}
               </mat-list-item>             
               <mat-list-item>
-                  <button mat-button><img class="png-icon" src="/assets/images/map.png" style="width: 24px; height: 24px;"></button>
+                  <button mat-button>                    
+                  </button>
                 Country     : {{weatherInfo.sys.country}}
               </mat-list-item>                   
               <mat-list-item>     
-                <button mat-button><img class="png-icon" src="/assets/images/temperature-celsius.png" style="width: 24px; height: 24px;"></button>
+                <button mat-button>                   
+                </button>
                 Temperature : {{weatherInfo.main.temp}} &deg;C 
               </mat-list-item>                   
               <mat-list-item>     
-                 <button mat-button><img class="png-icon" src="/assets/images/water-percent.png" style="width: 24px; height: 24px;"></button>
+                 <button mat-button>                   
+                  </button>
                 Humidity    : {{weatherInfo.main.humidity}}% 
               </mat-list-item>                                   
               <mat-list-item>
-                  <button mat-button><img class="png-icon" src="/assets/images/low-temperature.png" style="width: 24px; height: 24px;"></button>
+                  <button mat-button></button>
                 MinTemp     : {{weatherInfo.main.temp_min }} &deg;C 
               </mat-list-item>                     
               <mat-list-item>
-                  <button mat-button><img class="png-icon" src="/assets/images/high-temperature.png" style="width: 24px; height: 24px;"></button>
+                  <button mat-button></button>                
                 MaxTemp     : {{weatherInfo.main.temp_max}} &deg;C
                </mat-list-item>                 
               <mat-list-item>
-                  <button mat-button><img class="png-icon" src="/assets/images/cloud-and-sun.png" style="width: 24px; height: 24px;"></button>
+                  <button mat-button>                      
+                  </button>
                 Condition   : {{weatherInfo.weather[0].main}}
               </mat-list-item>                
               <mat-list-item>
-                  <button mat-button><img class="png-icon" src="/assets/images/sunny-landscape.png" style="width: 24px; height: 24px;"></button>
+                  <button mat-button>                    
+                  </button>
                 Description : {{weatherInfo.weather[0].description}}
               </mat-list-item>              
             </mat-list>
