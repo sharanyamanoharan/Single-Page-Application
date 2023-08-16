@@ -9,8 +9,8 @@ import { MovieComponent } from './movie/movie.component';
  export const routes: Routes = [
     { path: '' , redirectTo: '/weather', pathMatch: 'full'},
     { path: 'weather' ,component : WeatherComponent},
-    { path: 'currency' ,component : CurrencyComponent},
-    { path: 'movie' ,component : MovieComponent}
+    { path: 'currency' ,redirectTo: '/currency' ,component : CurrencyComponent},
+    { path: 'movie' ,redirectTo: '/movie' , component : MovieComponent}
 ];
 
 @NgModule({
